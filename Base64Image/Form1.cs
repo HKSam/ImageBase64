@@ -201,6 +201,8 @@ namespace Base64Image
         }
         private void button3_Click(object sender, EventArgs e)
         {
+            this.richTextBox.Hide();
+            this.pictureBox1.Show();
             OpenFileDialog opndlg = new OpenFileDialog();
             opndlg.Filter = "所有图像文件|*.bmp;*.pcx;*.png;*.jpg;*.gif";
             opndlg.Title = "打开图像文件";
@@ -221,6 +223,9 @@ namespace Base64Image
             }
         }
 
-        
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.richTextBox.Show();
+        }
     }
 }
